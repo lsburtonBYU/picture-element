@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Picture element example</title>
+
+  <style>
+    img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <picture>
+    <source srcset="images/polar-bear-1600w.jpg" media="(min-width: 901px)">
+    <source srcset="images/fox-900w.jpg" media="(min-width: 501px)">
+    <source srcset="images/dachshund-500w.jpg" media="(max-width: 500px)">
+
+    <img src="images/fox-900w.jpg" alt="fox walking across fall leaves in forest">
+  </picture>
+  <h1>Picture element example</h1>
+  <p>Resize the browser window. Breakpoints are at 900px and 500px, with a <em>very</em> conservative max width of
+    1600px.</p>
+</body>
+
+</html>
